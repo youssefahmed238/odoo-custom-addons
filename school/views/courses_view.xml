@@ -1,0 +1,51 @@
+<odoo>
+    <record id='courses_view_tree' model='ir.ui.view'>
+        <field name='name'>courses tree</field>
+        <field name='model'>courses</field>
+        <field name='arch' type='xml'>
+            <tree>
+                <field name='name'/>
+                <field name="course_code"/>
+                <field name='class_ids' widget='many2many_tags'/>
+                <field name='description'/>
+            </tree>
+        </field>
+    </record>
+
+    <record id='courses_view_form' model='ir.ui.view'>
+        <field name='name'>courses form</field>
+        <field name='model'>courses</field>
+        <field name='arch' type='xml'>
+            <form>
+                <sheet>
+                    <group>
+                        <field name='name'/>
+                        <field name='course_code'/>
+                        <field name='class_ids' widget='many2many_tags'/>
+                        <field name='description'/>
+                    </group>
+                </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids"/>
+                    <field name="activity_ids"/>
+                    <field name="message_ids"/>
+                </div>
+            </form>
+        </field>
+    </record>
+
+    <record id='courses_view_search' model='ir.ui.view'>
+        <field name='name'>courses search</field>
+        <field name='model'>courses</field>
+        <field name='arch' type='xml'>
+            <search>
+                <field name='name'/>
+            </search>
+        </field>
+    </record>
+
+    <record id='courses_action' model='ir.actions.act_window'>
+        <field name='name'>courses</field>
+        <field name='res_model'>courses</field>
+    </record>
+</odoo>

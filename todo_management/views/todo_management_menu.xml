@@ -1,0 +1,14 @@
+<odoo>
+    <menuitem
+        id = 'todo_management_root_menu'
+        name = 'To-Do'
+        web_icon = 'todo_management,static/description/icon.png'
+    />
+
+    <menuitem
+        id = 'all_tasks_menu'
+        name = 'All Tasks'
+        parent = 'todo_management_root_menu'
+        action = 'tasks_action'
+    />
+</odoo>

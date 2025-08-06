@@ -1,0 +1,57 @@
+<odoo>
+    <record id = 'students_view_tree' model = 'ir.ui.view'>
+        <field name = 'name'>students tree</field>
+        <field name = 'model'>students</field>
+        <field name = 'arch' type = 'xml'>
+            <tree>
+                <field name = 'student_code'/>
+                <field name = "name"/>
+                <field name = 'class_id'/>
+                <field name = 'age' optional = '1'/>
+            </tree>
+        </field>
+    </record>
+
+    <record id = 'students_view_form' model = 'ir.ui.view'>
+        <field name = 'name'>students form</field>
+        <field name = 'model'>students</field>
+        <field name = 'arch' type = 'xml'>
+            <form>
+                <sheet>
+                    <div class = 'oe_title'>
+                        <label for = 'name' string = 'Name'/>
+                        <h1>
+                            <field name = 'name' class = 'oe_inline'/>
+                        </h1>
+                    </div>
+                    <group string = 'Student Information'>
+                        <group>
+                            <field name = 'student_code'/>
+                            <field name = 'age'/>
+                        </group>
+                        <group>
+                            <field name = 'class_id'/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id = 'students_view_search' model = 'ir.ui.view'>
+        <field name = 'name'>students search</field>
+        <field name = 'model'>students</field>
+        <field name = 'arch' type = 'xml'>
+            <search>
+                <field name = 'student_code'/>
+                <field name = 'name'/>
+                <field name = 'class_id'/>
+            </search>
+        </field>
+    </record>
+
+    <record id = 'students_action' model = 'ir.actions.act_window'>
+        <field name = 'name'>students</field>
+        <field name = 'res_model'>students</field>
+    </record>
+</odoo>

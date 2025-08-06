@@ -1,0 +1,14 @@
+<odoo>
+    <record id = 'kindergartens_classes_action' model = 'ir.actions.act_window'>
+        <field name = 'name'>kindergartens classes</field>
+        <field name = 'res_model'>classes</field>
+        <field name="domain">[('years_of_study', 'in', ['first', 'second'])]</field>
+    </record>
+
+    <menuitem
+        id = 'kindergartens_classes_menu_item'
+        name = 'kindergartens classes'
+        parent = 'student_custom_menu'
+        action = 'kindergartens_classes_action'
+    />
+</odoo>

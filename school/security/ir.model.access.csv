@@ -1,0 +1,6 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_students,access_students,model_students,,1,1,1,1
+access_classes,access_classes,model_classes,,1,1,1,1
+access_courses,access_courses,model_courses,,1,1,1,1
+access_high_school_students,access_high_school_students,model_high_school_students,,1,1,1,1
+access_kindergartens_classes,access_kindergartens_classes,model_kindergartens_classes,,1,1,1,1

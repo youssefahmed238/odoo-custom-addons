@@ -1,0 +1,38 @@
+<odoo>
+    <record id='multi_assign_view_tree' model='ir.ui.view'>
+        <field name='name'>todo multi assign tree</field>
+        <field name='model'>todo.multi.assign</field>
+        <field name='arch' type='xml'>
+            <tree>
+                <field name='task_ids' widget='many2many_tags'/>
+                <field name='assign_id'/>
+            </tree>
+        </field>
+    </record>
+
+    <record id='multi_assign_view_form' model='ir.ui.view'>
+        <field name='name'>multi assign form</field>
+        <field name='model'>todo.multi.assign</field>
+        <field name='arch' type='xml'>
+            <form>
+                <sheet>
+                    <group>
+                        <field name='task_ids' widget="many2many_tags" invisible = '1'/>
+                        <field name='assign_id'/>
+                    </group>
+                    <footer>
+                        <button name='action_assign' type='object' string='Assign' class='btn-primary'/>
+                        <button string='Cancel' class='btn-secondary' special='cancel'/>
+                    </footer>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id='multi_assign_wizard_action' model='ir.actions.act_window'>
+        <field name='name'>Multi Assign Wizard</field>
+        <field name='res_model'>todo.multi.assign</field>
+        <field name='target'>new</field>
+        <field name='view_mode'>form</field>
+    </record>
+</odoo>
