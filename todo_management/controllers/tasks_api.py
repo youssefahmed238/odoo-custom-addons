@@ -1,7 +1,5 @@
 from odoo import http
 from odoo.http import request
-
-from enterprise.stock_barcode.static.img.make_barcodes import page1
 from .response import *
 from .tasks_helper import *
 from urllib.parse import parse_qs
