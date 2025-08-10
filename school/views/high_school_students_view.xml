@@ -2,8 +2,8 @@
     <record id = 'high_school_students_action' model = 'ir.actions.act_window'>
         <field name = 'name'>high school students</field>
         <field name = 'res_model'>high.school.students</field>
-<!--        <field name = 'res_model'>students</field>-->
-<!--        <field name="domain">[('age', '>=', 15), ('student_code', '>', 225)]</field>-->
+        <field name = 'res_model'>students</field>
+        <field name="domain">[('age', '>=', 15), ('student_code', '>', 225)]</field>
     </record>
 
     <menuitem

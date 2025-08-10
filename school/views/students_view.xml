@@ -50,8 +50,8 @@
         </field>
     </record>
 
-    <record id = 'students_action' model = 'ir.actions.act_window'>
-        <field name = 'name'>students</field>
-        <field name = 'res_model'>students</field>
+    <record id="students_action" model="ir.actions.act_window">
+        <field name="name">Students</field>
+        <field name="res_model">students</field>
     </record>
 </odoo>
