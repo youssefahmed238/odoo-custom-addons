@@ -1,0 +1,14 @@
+<odoo>
+
+    <record id="payment_method_view_form_inherit" model="ir.ui.view">
+        <field name="name">payment.method.view.form.inherit</field>
+        <field name="model">payment.method</field>
+        <field name="inherit_id" ref="payment.payment_method_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//sheet/group/field[@name='active']" position="after">
+                <field name="delivery_carrier_id"/>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>

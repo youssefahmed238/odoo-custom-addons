@@ -5,7 +5,8 @@
     'version': '17.0.1.0.0',
     'depends': ['website_sale', 'payment', 'delivery'],
     'data': [
-        'views/delivery_carrier_view.xml'
+        'views/delivery_carrier_view.xml',
+        'views/payment_method_view.xml',
     ],
     'installable': True,
     'application': False,
