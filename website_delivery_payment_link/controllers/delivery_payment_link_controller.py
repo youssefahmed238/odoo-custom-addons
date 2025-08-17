@@ -14,10 +14,10 @@ class DeliveryPaymentLinkController(http.Controller):
         payment_delivery_map = {}
 
         for delivery in delivery_carrier:
-            delivery_payment_map[str(delivery.id)] = str(delivery.payment_method_id.id)
+            delivery_payment_map[str(delivery.id)] = str(delivery.payment_method_id.id or '')
 
         for payment in payment_methods:
-            payment_delivery_map[str(payment.id)] = str(payment.delivery_carrier_id.id)
+            payment_delivery_map[str(payment.id)] = str(payment.delivery_carrier_id.id or '')
 
         return {
             'delivery_payment_map': delivery_payment_map,

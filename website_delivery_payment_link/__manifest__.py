@@ -3,7 +3,7 @@
     'author': 'Youssef',
     'category': 'Website',
     'version': '17.0.1.0.0',
-    'depends': ['website_sale', 'payment', 'delivery'],
+    'depends': ['website_sale'],
     'data': [
         'views/delivery_carrier_view.xml',
         'views/payment_method_view.xml',
