@@ -5,6 +5,7 @@
     'version': '17.0.0.1.0',
     'depends': ['point_of_sale'],
     'data': [
+        'data/ir_config_parameter.xml',
         'views/pos_res_config_settings_views.xml',
     ],
     'installable': True,
