@@ -1,0 +1,19 @@
+<odoo>
+
+    <record id="pos_config_settings_view_form" model="ir.ui.view">
+        <field name="name">pos.config.settings.inherit.interface</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="point_of_sale.res_config_settings_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//block[@id='pos_interface_section']" position="inside">
+                <setting help="Configure the POS products selection limitation">
+                    <field name="pos_control_limitation_of_products"/>
+                    <div class="content-group mt16">
+                        <field name="pos_products_limit" readonly="not pos_control_limitation_of_products"/>
+                    </div>
+                </setting>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>
