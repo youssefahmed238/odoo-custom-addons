@@ -1,0 +1,8 @@
+<odoo>
+
+    <record id="group_delete_documents" model="res.groups">
+        <field name="name">Can't Delete Documents</field>
+        <field name="category_id" ref="base.module_category_productivity_documents"/>
+    </record>
+
+</odoo>
