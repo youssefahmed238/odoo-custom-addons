@@ -6,15 +6,15 @@
        t-inherit-mode="extension">
 
         <xpath expr="//button[hasclass('o_inspector_archive')]" position="attributes">
-            <attribute name="t-if">canDeleteDocuments()</attribute>
+            <attribute name="t-if">canMoveToTrash()</attribute>
         </xpath>
 
         <xpath expr="//button[hasclass('o_inspector_delete')]" position="attributes">
-            <attribute name="t-if">canDeleteDocuments()</attribute>
+            <attribute name="t-if">canDelete()</attribute>
         </xpath>
 
         <xpath expr="//button[hasclass('o_archived')]" position="attributes">
-            <attribute name="t-if">canDeleteDocuments()</attribute>
+            <attribute name="t-if">canRestore()</attribute>
         </xpath>
 
     </t>
