@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates>
+
+    <t t-name="documents.DocumentsInspector.buttons"
+       t-inherit="documents.DocumentsInspector.buttons"
+       t-inherit-mode="extension">
+
+        <xpath expr="//button[hasclass('o_inspector_archive')]" position="attributes">
+            <attribute name="t-if">canMoveToTrash()</attribute>
+        </xpath>
+
+        <xpath expr="//button[hasclass('o_inspector_delete')]" position="attributes">
+            <attribute name="t-if">canDelete()</attribute>
+        </xpath>
+
+        <xpath expr="//button[hasclass('o_archived')]" position="attributes">
+            <attribute name="t-if">canRestore()</attribute>
+        </xpath>
+
+    </t>
+
+</templates>
